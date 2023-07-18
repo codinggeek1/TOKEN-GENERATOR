@@ -16,7 +16,7 @@ export default function MintModal({
   setIsChangeMinter
 }) {
   const contractAddress = tokenAddress
-  const web3 = new Web3('https://polygon-mumbai-bor.publicnode.com')
+  const web3 = new Web3('https://rpc-mumbai.maticvigil.com')
 
   const {
     register,
