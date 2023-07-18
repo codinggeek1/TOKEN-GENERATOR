@@ -7,7 +7,7 @@ import MintModal from './modals/MintModal'
 import { useWeb3React } from '@web3-react/core'
 
 export default function DashboardComp({ tokenAddress }) {
-  const web3 = new Web3('https://polygon-mumbai-bor.publicnode.com')
+  const web3 = new Web3('https://rpc-mumbai.maticvigil.com')
   const contractAddress = tokenAddress
 
   const [tokenName, setTokenName] = useState()
@@ -18,7 +18,7 @@ export default function DashboardComp({ tokenAddress }) {
   const [isChangeMinter, setIsChangeMinter] = useState(false)
 
   let explorerLink =
-    'https://polygonscan.com/' + tokenAddress
+    'https://mumbai.polygonscan.com/' + tokenAddress
 
   const ERC20TokenContract = new web3.eth.Contract(ERC20ABI, contractAddress)
 
