@@ -89,9 +89,9 @@ export default function Header() {
                 {
                   chainId: '0x13881',
                   chainName: 'Mumbai',
-                  rpcUrls: ['https://polygon-mumbai-bor.publicnode.com'],
+                  rpcUrls: ['https://rpc-mumbai.maticvigil.com'],
                   blockExplorerUrls: [
-                    'https://polygonscan.com/',
+                    'https://mumbai.polygonscan.com/',
                   ],
                   nativeCurrency: {
                     symbol: 'MATIC',
